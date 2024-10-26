@@ -1,0 +1,151 @@
+{% extends 'web/menu_izquierdo.html' %} 
+{% load static %} 
+{% block todas_las_ventas %} 
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Todas las ventas</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Todos las ventas</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Content
+		================================================== -->
+		<div class="container">
+			<div class="row">
+				
+				<!-- Search -->
+				<div class="col-md-12">
+					<div class="main-search-input gray-style margin-top-0 margin-bottom-10">
+
+						<div class="main-search-input-item">
+							<input type="text" placeholder="Buscar por codigo de venta" value=""/>
+						</div>
+
+						<div class="main-search-input-item">
+							<select data-placeholder="Plazo" class="chosen-select" >
+								<option>Plazo</option>	
+								<option>Hoy</option>
+								<option>Esta semana</option>
+								<option>Ultimos 7 dias</option>
+								<option>Ultimo mes</option>
+								<option>Este ano</option>
+								<option>Desde el inicio</option>
+							</select>
+						</div>
+
+						<button class="button">Filtrar</button>
+					</div>
+				</div>
+				<!-- Search Section / End -->
+
+
+				<div class="col-md-12">
+
+					<div class="row">
+
+						<div class="col-md-12">
+
+							<table class="basic-table">
+				
+								<tr>
+									<th>Cod de venta</th>
+									<th>Fecha</th>
+									<th>Hora</th>
+									<th>Total venta</th>
+									<th>Ganancia</th>
+									<th></th>
+								</tr>
+				
+								<tr>
+									<td data-label="Column 2">576</td>
+									<td data-label="Column 1">20/10/2024</td>
+									<td data-label="Column 2">10:45</td>
+									<td data-label="Column 2">$4.500</td>
+									<td data-label="Column 2">$990</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+								<tr>
+									<td data-label="Column 2">576</td>
+									<td data-label="Column 1">20/10/2024</td>
+									<td data-label="Column 2">10:45</td>
+									<td data-label="Column 2">$4.500</td>
+									<td data-label="Column 2">$990</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+								<tr>
+									<td data-label="Column 2">576</td>
+									<td data-label="Column 1">20/10/2024</td>
+									<td data-label="Column 2">10:45</td>
+									<td data-label="Column 2">$4.500</td>
+									<td data-label="Column 2">$990</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+				
+								<tr>
+									<td data-label="Column 2">576</td>
+									<td data-label="Column 1">20/10/2024</td>
+									<td data-label="Column 2">10:45</td>
+									<td data-label="Column 2">$4.500</td>
+									<td data-label="Column 2">$990</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+				
+								<tr>
+									<td data-label="Column 2">576</td>
+									<td data-label="Column 1">20/10/2024</td>
+									<td data-label="Column 2">10:45</td>
+									<td data-label="Column 2">$4.500</td>
+									<td data-label="Column 2">$990</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+							</table>
+						</div>
+
+					</div>
+
+					<!-- Pagination -->
+					<div class="clearfix"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Pagination -->
+							<div class="pagination-container margin-top-20 margin-bottom-40">
+								<nav class="pagination">
+									<ul>
+										<li><a href="#" class="current-page">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<!-- Pagination / End -->
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Content / End -->
+
+{% endblock %}
+

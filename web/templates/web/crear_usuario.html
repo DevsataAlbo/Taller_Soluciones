@@ -1,0 +1,122 @@
+{% extends 'web/menu_izquierdo.html' %} 
+{% load static %} 
+{% block crear_usuario %} 
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Ingresar venta</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Ingresar venta</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div id="add-listing">
+
+					<!-- Section -->
+					<div class="add-listing-section">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+						</div>
+
+						<!-- Perfil y RUT -->
+						
+						<div class="row with-forms">
+							<div class="col-md-4">
+								<h5>Perfil <i class="tip" data-tip-content="El perfil definira las atribuciones que tendra el usuario"></i></h5>
+								<select class="chosen-select-no-single" >
+									<option label="blank">Selecciona el perfil</option>	
+									<option>Administrador</option>
+									<option>Vendedor</option>
+								</select>
+							</div>
+
+							<div class="col-md-4">
+								<h5>RUT <i class="tip" data-tip-content="Ingresa el RUT del usuario"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+
+							<div class="col-md-4">
+								<h5>Fecha de nacimiento <i class="tip" data-tip-content="Ingresa el RUT del usuario"></i></h5>
+								<input class="search-field" type="date" value=""/>
+							</div>
+						</div>
+
+						<div class="row with-forms">
+							<div class="col-md-6">
+								<h5>Nombres <i class="tip" data-tip-content="Nombres del usuario"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+
+							<div class="col-md-6">
+								<h5>Apellidos <i class="tip" data-tip-content="Apellidos del usuario"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+						</div>
+
+						<div class="row with-forms">
+							<div class="col-md-6">
+								<h5>Email <i class="tip" data-tip-content="Email del usuario"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+
+							<div class="col-md-6">
+								<h5>Telefono <i class="tip" data-tip-content="Telefono del usuario"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+						</div>
+
+						<div class="row with-forms">
+							<div class="col-md-8">
+								<h5>Direccion <i class="tip" data-tip-content="Direccion del usuario"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+
+							<div class="col-md-4">
+								<h5>Comuna <i class="tip" data-tip-content="Selecciona la comuna"></i></h5>
+								<select class="chosen-select-no-single" >
+									<option label="blank">Selecciona la comuna</option>	
+									<option>Puente Alto</option>
+									<option>La Florida</option>
+									<option>La Pintana</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+					<!-- Section / End -->
+
+					<a href="#" class="button preview">Crear usuario <i class="fa fa-arrow-circle-right"></i></a>
+
+				</div>
+			</div>
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2024.</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+
+{% endblock %} 

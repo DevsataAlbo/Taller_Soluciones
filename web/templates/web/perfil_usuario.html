@@ -1,0 +1,110 @@
+{% extends 'web/menu_izquierdo.html' %} 
+{% load static %} 
+{% block perfil_usuario %} 
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Tu perfil</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Mi perfil</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<!-- Profile -->
+			<div class="col-lg-6 col-md-12">
+				<div class="dashboard-list-box margin-top-0">
+					<div class="dashboard-list-box-static">
+						
+						<!-- Avatar -->
+						<div class="edit-profile-photo">
+							<img src="images/user-avatar.jpg" alt="">
+							<div class="change-photo-btn">
+								<div class="photoUpload">
+								    <span><i class="fa fa-upload"></i> Cargar foto</span>
+								    <input type="file" class="upload" />
+								</div>
+							</div>
+						</div>
+	
+						<!-- Details -->
+						<div class="my-profile">
+
+							<label>Tu nombre</label>
+							<input value="Jon Doe" type="text">
+
+							<label>Telefono</label>
+							<input value="56912345678" type="text">
+
+							<label>Email</label>
+							<input value="hola@gestiondeventas.com" type="text">
+
+							<label>Direccion</label>
+							<input value="Por ahi 666" type="text">
+
+							<label>Comuna</label>
+							<select class="chosen-select-no-single" >
+								<option label="blank">Selecciona la comuna</option>	
+								<option>Puente Alto</option>
+								<option>La Florida</option>
+								<option>La Pintana</option>
+							</select>
+						</div>
+	
+						<button class="button margin-top-15">Guardar cambios</button>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Change Password -->
+			<div class="col-lg-6 col-md-12">
+				<div class="dashboard-list-box margin-top-0">
+					<h4 class="gray">Cambiar Password</h4>
+					<div class="dashboard-list-box-static">
+
+						<!-- Change Password -->
+						<div class="my-profile">
+							<label class="margin-top-0">Ingresa tu password actual</label>
+							<input type="password">
+
+							<label>Ingresa tu nuevo Password</label>
+							<input type="password">
+
+							<label>Confirma tu nuevo Password</label>
+							<input type="password">
+
+							<button class="button margin-top-15">Guardar Password</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2024</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+{% endblock %} 

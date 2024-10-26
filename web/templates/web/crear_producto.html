@@ -1,0 +1,163 @@
+{% extends 'web/menu_izquierdo.html' %} 
+{% load static %} 
+{% block crear_producto %} 
+
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Publicar producto</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Publicar</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div id="add-listing">
+
+					<!-- Section -->
+					<div class="add-listing-section">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-doc"></i> Basic Informations</h3>
+						</div>
+
+						<!-- Title -->
+						<div class="row with-forms">
+							<div class="col-md-12">
+								<h5>Nombre del producto <i class="tip" data-tip-content="Name of your business"></i></h5>
+								<input class="search-field" type="text" value=""/>
+							</div>
+						</div>
+
+						<!-- Row -->
+						<div class="row with-forms">
+
+							<!-- Status -->
+							<div class="col-md-6">
+								<h5>Categoria</h5>
+								<select class="chosen-select-no-single" >
+									<option label="blank">Selecciona la categoria</option>	
+									<option>Despensa</option>
+									<option>Aguas, jugos y bebidas</option>
+									<option>Verduleria</option>
+									<option>Rotiseria</option>
+									<option>Carnes</option>
+								</select>
+							</div>
+
+							<!-- Type -->
+							<div class="col-md-6">
+								<h5>Stock del producto <i class="tip" data-tip-content="Maximum of 15 keywords related with your business"></i></h5>
+								<input type="text" placeholder="">
+							</div>
+
+						</div>
+						<!-- Row / End -->
+						 <!-- Row -->
+						<div class="row with-forms">
+
+							<!-- Status -->
+							<div class="col-md-6">
+								<h5>Precio de venta <i class="tip" data-tip-content="Maximum of 15 keywords related with your business"></i></h5>
+								<input type="text" placeholder="">
+							</div>
+
+							<!-- Type -->
+							<div class="col-md-6">
+								<h5>Precio de compra <i class="tip" data-tip-content="Maximum of 15 keywords related with your business"></i></h5>
+								<input type="text" placeholder="">
+							</div>
+
+						</div>
+						<!-- Row / End -->
+
+					</div>
+					<!-- Section / End -->
+
+						<!-- Section -->
+						<div class="add-listing-section margin-top-45">
+
+							<!-- Headline -->
+							<div class="add-listing-headline">
+								<h3><i class="sl sl-icon-docs"></i> Descripcion del producto</h3>
+							</div>
+	
+							<!-- Description -->
+							<div class="form">
+								<h5>Descripcion</h5>
+								<textarea class="WYSIWYG" name="summary" cols="40" rows="3" id="summary" spellcheck="true"></textarea>
+							</div>
+	
+							<!-- Row -->
+							<div class="row with-forms">
+	
+								<div class="col-md-4">
+									<h5>Marca del producto<span>(optional)</span></h5>
+									<input type="text">
+								</div>
+	
+								<div class="col-md-4">
+									<h5>Codigo  <span>(optional)</span></h5>
+									<input type="text">
+								</div>
+	
+							</div>
+							<!-- Row / End -->
+	
+						</div>
+						<!-- Section / End -->
+
+	
+					<!-- Section -->
+					<div class="add-listing-section margin-top-45">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-picture"></i> Imagen del producto</h3>
+						</div>
+
+						<!-- Dropzone -->
+						<div class="submit-section">
+							<form action="/file-upload" class="dropzone" ></form>
+						</div>
+
+					</div>
+					<!-- Section / End -->
+
+
+				
+
+					<a href="#" class="button preview">Crear producto <i class="fa fa-arrow-circle-right"></i></a>
+
+				</div>
+			</div>
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2024.</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+
+{% endblock %} 

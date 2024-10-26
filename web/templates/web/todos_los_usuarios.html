@@ -1,0 +1,137 @@
+{% extends 'web/menu_izquierdo.html' %} 
+{% load static %} 
+{% block todos_los_usuarios %} 
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Todos los usuarios</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Todos los usuarios</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Content
+		================================================== -->
+		<div class="container">
+			<div class="row">
+				
+				<!-- Search -->
+				<div class="col-md-12">
+					<div class="main-search-input gray-style margin-top-0 margin-bottom-10">
+
+						<div class="main-search-input-item">
+							<input type="text" placeholder="Buscar por nombre o apellido" value=""/>
+						</div>
+
+						<div class="main-search-input-item">
+							<input type="text" placeholder="Buscar por RUT" value=""/>
+						</div>
+
+						<button class="button">Buscar</button>
+					</div>
+				</div>
+				<!-- Search Section / End -->
+
+
+				<div class="col-md-12">
+
+					<div class="row">
+
+						<div class="col-md-12">
+
+							<table class="basic-table">
+				
+								<tr>
+									<th>Perfil</th>
+									<th>RUT</th>
+									<th>Nombre</th>
+									<th>Apellido</th>
+									<th></th>
+								</tr>
+				
+								<tr>
+									<td data-label="Column 2">Administrador</td>
+									<td data-label="Column 1">11.111.111-1</td>
+									<td data-label="Column 2">David Alfonso</td>
+									<td data-label="Column 2">Arellano Moraga</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+								<tr>
+									<td data-label="Column 2">Administrador</td>
+									<td data-label="Column 1">11.111.111-1</td>
+									<td data-label="Column 2">David Alfonso</td>
+									<td data-label="Column 2">Arellano Moraga</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+								<tr>
+									<td data-label="Column 2">Administrador</td>
+									<td data-label="Column 1">11.111.111-1</td>
+									<td data-label="Column 2">David Alfonso</td>
+									<td data-label="Column 2">Arellano Moraga</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+				
+								<tr>
+									<td data-label="Column 2">Administrador</td>
+									<td data-label="Column 1">11.111.111-1</td>
+									<td data-label="Column 2">David Alfonso</td>
+									<td data-label="Column 2">Arellano Moraga</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+				
+								<tr>
+									<td data-label="Column 2">Administrador</td>
+									<td data-label="Column 1">11.111.111-1</td>
+									<td data-label="Column 2">David Alfonso</td>
+									<td data-label="Column 2">Arellano Moraga</td>
+									<td data-label="Column 2" class="btn btn-info">Ver Detalles</td>
+								</tr>
+							</table>
+						</div>
+
+					</div>
+
+					<!-- Pagination -->
+					<div class="clearfix"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Pagination -->
+							<div class="pagination-container margin-top-20 margin-bottom-40">
+								<nav class="pagination">
+									<ul>
+										<li><a href="#" class="current-page">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<!-- Pagination / End -->
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Content / End -->
+
+{% endblock %}

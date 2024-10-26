@@ -63,6 +63,7 @@
 					<table class="basic-table">
 		
 						<tr>
+							<th>Imagen</th>
 							<th>SKU</th>
 							<th>Nombre</th>
 							<th>Stock</th>
@@ -71,133 +72,19 @@
 							<th>Rentabilidad</th>
 							<th></th>
 						</tr>
+						{% for producto in productos %}
+						<tr>
+							<td data-label="Column 2"><img src="{{producto.imagen.url}}" style="height: 100px;" alt=""></td>
+							<td data-label="Column 2">33</td>
+							<td data-label="Column 1">{{producto.nombre}}</td>
+							<td data-label="Column 2">{{producto.stock}}</td>
+							<td data-label="Column 2">${{producto.precio_compra}}</td>
+							<td data-label="Column 2">${{producto.precio_venta}}</td>
+							<td data-label="Column 2">$340 - 30%</td>
+							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
+						</tr>
+						{% endfor %}
 		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
-		
-						<tr>
-							<td data-label="Column 2">33</td>
-							<td data-label="Column 1">Tallarines N5</td>
-							<td data-label="Column 2">45</td>
-							<td data-label="Column 2">$650</td>
-							<td data-label="Column 2">$990</td>
-							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
-						</tr>
 					</table>
 				</div>
 

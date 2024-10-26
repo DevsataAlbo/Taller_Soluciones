@@ -19,7 +19,7 @@ class Producto(models.Model):
     precio_venta = models.IntegerField()
     precio_compra = models.IntegerField()
     stock = models.IntegerField()
-    codigo = models.IntegerField()
+    codigo = models.IntegerField(null = True)
     imagen = models.ImageField(upload_to='productos',blank=True)
 
     def __str__(self):

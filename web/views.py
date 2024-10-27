@@ -24,14 +24,45 @@ def todas_las_ventas ( request ):
 
 def todos_los_productos ( request ):
     listaProductos = Producto.objects.all()
-    print(listaProductos)
+    listaCategorias = Categoria.objects.all()
+
+    # print(listaProductos)
     context = {
-        'productos':listaProductos
+        'productos':listaProductos,
+        'categorias':listaCategorias
     }
     return render( request, 'web/todos_los_productos.html', context )
 
+def productos_por_categoria ( request, categoria_id ):
+    # Recupera la categoría seleccionada
+    categoria = Categoria.objects.get(id=categoria_id)
+    # Obtiene los productos que pertenecen a esta categoría
+    productos = Producto.objects.filter(categoria=categoria)
+    context = {
+        'productos': productos,
+        'categoria': categoria
+    }
+    return render(request, 'web/todos_los_productos.html', context)
+
+def productos_por_nombre ( request ):
+
+    nombre = request.POST['nombre']
+
+    listaProductos = Producto.objects.filter(nombre__contains=nombre)
+    listaCategorias = Categoria.objects.all()
+
+    context = {
+        'productos': listaProductos,
+        'categoria': listaCategorias
+    }
+    return render(request, 'web/todos_los_productos.html', context)
+
+
+
 def todos_los_usuarios ( request ):
     return render( request, 'web/todos_los_usuarios.html' )
+
+
 
 
 

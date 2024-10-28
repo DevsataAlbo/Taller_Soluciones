@@ -1,0 +1,82 @@
+{% extends 'web/menu_izquierdo.html' %} 
+{% load static %} 
+{% block producto_detalle %} 
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>{{ producto.nombre }}</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<!-- Profile -->
+			<div class="col-lg-6 col-md-12">
+				<div class="dashboard-list-box margin-top-0">
+					<div class="dashboard-list-box-static">
+						
+						<!-- Details -->
+						<div class="my-profile">
+							{% if producto.imagen %}
+								<img src="{{producto.imagen.url}}" style="height: 500px;" alt="">
+							{% else %}
+								<img src="http://via.placeholder.com/500">
+							{% endif %}
+						</div>
+
+					</div>
+				</div>
+				<div class="dashboard-list-box margin-top-0">
+					<div class="dashboard-list-box-static">
+						<!-- Details -->
+						<button class="button margin-top-15">Editar</button>
+						<button class="button margin-top-15 ms-5">Eliminar</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Change Password -->
+			<div class="col-lg-6 col-md-12">
+				<div class="dashboard-list-box margin-top-0">
+					<div class="dashboard-list-box-static">
+
+						<!-- Change Password -->
+						<div class="my-profile">
+							<h3 class="margin-top-0">{{producto.nombre}}</h3>
+							<h4> <strong> Marca: </strong>{{producto.marca}}</h4>
+							<h4> <strong> Categoria: </strong>{{producto.categoria}}</h4>
+							<h4> <strong> Stock: </strong> {{producto.stock}}</h4>
+							<h4> <strong> Precio de venta: </strong> ${{producto.precio_venta}}</h4>
+							<h4> <strong> Precio de compra: </strong>${{producto.precio_compra}}</h4>
+							<h4> <strong> Codigo: </strong> {{producto.codigo}}</h4>
+							<p class="mt-5">{{producto.descripcion}}</p>
+
+
+						<a class="button margin-top-15 ms-5" href="{% url 'todos_los_productos' %}" > Volver a todos los productos</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2024</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+{% endblock %} 

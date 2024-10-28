@@ -63,9 +63,7 @@
 		
 						<tr>
 							<th>Imagen</th>
-							<th>SKU</th>
 							<th>Nombre</th>
-							<th>Categoria</th>
 							<th>Stock</th>
 							<th>Precio de compra</th>
 							<th>Precio de venta</th>
@@ -76,14 +74,12 @@
 						{% for producto in productos %}
 						<tr>
 							<td data-label="Column 2"><img src="{{producto.imagen.url}}" style="height: 100px;" alt=""></td>
-							<td data-label="Column 2">33</td>
 							<td data-label="Column 1">{{producto.nombre}}</td> 
-							<td data-label="Column 1">{{producto.categoria}}</td> 
 							<td data-label="Column 2">{{producto.stock}}</td>
 							<td data-label="Column 2">${{producto.precio_compra}}</td>
 							<td data-label="Column 2">${{producto.precio_venta}}</td>
 							<td data-label="Column 2">$340 - 30%</td>
-							<td data-label="Column 2" class="btn btn-info">Ver mas</td>
+							<td data-label="Column 2" ><a href="{% url 'producto_detalle' producto.id %}" class="btn btn-danger py-2 px-5 text-white fs-5"> Ver mas </td>
 						</tr>
 						{% endfor %}
 		

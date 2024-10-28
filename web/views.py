@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Categoria, Producto
 
@@ -57,7 +57,14 @@ def productos_por_nombre ( request ):
     }
     return render(request, 'web/todos_los_productos.html', context)
 
+def producto_detalle ( request,producto_id ):
+    # objProducto = Producto.objects.get(pk=producto_id)
+    objProducto = get_object_or_404(Producto,pk=producto_id)
+    context = {
+        'producto':objProducto
+    }
 
+    return render(request, 'web/producto_detalle.html', context)
 
 def todos_los_usuarios ( request ):
     return render( request, 'web/todos_los_usuarios.html' )

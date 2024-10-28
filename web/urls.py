@@ -12,6 +12,7 @@ urlpatterns = [
     path('productos_por_categoria/<int:categoria_id>', productos_por_categoria, name='productos_por_categoria'),
     path('productos_por_nombre', productos_por_nombre, name='productos_por_nombre'),
     path('todos_los_usuarios', todos_los_usuarios, name='todos_los_usuarios'),
+    path('producto_detalle/<int:producto_id>', producto_detalle, name='producto_detalle'),
 ]
 
 

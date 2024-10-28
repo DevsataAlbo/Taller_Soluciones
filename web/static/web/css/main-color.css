@@ -107,6 +107,7 @@ a.button.border,
     color: #f91942;
 }
 
+.button2,
 .daterangepicker td.active.end-date.in-range.available,
 .qtyTotal,
 .mm-menu em.mm-counter,
@@ -150,7 +151,6 @@ input:checked + .slider,
 #small-dialog .mfp-close:hover {
     background-color: #f91942;
 }
-
 
 .rangeslider__fill,
 span.blog-item-tag ,
